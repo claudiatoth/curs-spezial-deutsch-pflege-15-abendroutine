@@ -11,6 +11,26 @@
     <meta property="og:locale" content="ro_RO">
     <meta name="description" content="Pflege Lecția 15 — Abendroutine + Culcarea. Cina + toaleta + medicamente seara + Schlafhilfe naturală. Claudia Toth.">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* === FIX dialog vizibilitate (8 iun 2026) — override .speech-bubble opacity:0 din styles.css === */
+        .dialog-audio-player { display:flex; align-items:center; gap:12px; flex-wrap:wrap; background:#f0fdf4; border:1px solid #a7f3d0; border-radius:12px; padding:10px 16px; margin-bottom:18px; }
+        .dialog-play-btn { width:44px; height:44px; border-radius:50%; font-size:18px; flex-shrink:0; }
+        .dialog-time { font-weight:700; color:#065f46; font-size:0.9rem; }
+        .dialog-hint { color:#6b7280; font-size:0.85rem; font-style:italic; }
+        .dialog-replici { display:flex; flex-direction:column; gap:14px; }
+        .dialog-reply { display:flex; align-items:flex-start; gap:14px; padding:8px 10px; border-radius:14px; border:1px solid transparent; transition:background 0.3s, border-color 0.3s; }
+        .dialog-reply.active-reply { background:#ecfdf5; border-color:#6ee7b7; }
+        .dialog-reply .character-avatar { width:56px; height:56px; min-width:56px; border-width:2px; font-size:32px; margin-top:2px; }
+        .dialog-reply .speech-bubble { opacity:1; transform:none; pointer-events:auto; margin-top:0; max-width:none; width:auto; flex:1; box-shadow:none; }
+        .dialog-reply .speech-bubble::before, .dialog-reply .speech-bubble::after { display:none; }
+        .dialog-reply .speaker-name { font-weight:700; font-size:0.82rem; margin-bottom:5px; }
+        .dialog-reply .speech-de { color:#065f46; font-weight:600; font-size:0.96rem; line-height:1.45; margin-bottom:3px; }
+        .dialog-reply .speech-ro { color:#6b7280; font-style:italic; font-size:0.86rem; line-height:1.4; }
+        .speaker-andreea { color:#047857; }
+        .speaker-frau-muller { color:#a21caf; }
+        .frau-muller-avatar { background:linear-gradient(135deg,#fdf4ff 0%,#f3e8ff 100%) !important; border-color:#a21caf !important; }
+        .speech-frau-mueller { background:linear-gradient(135deg,#fdf4ff 0%,#f3e8ff 100%); border-color:#e9d5ff; color:#581c87; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
